@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controle">
+ <children>       
+  	  <ImageView fx:id="Cenario" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Cenario.png" />
+         </image>
+      </ImageView>
+ 	  <ImageView fx:id="SegundaTela" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/TelaSecundaria.png" />
+         </image>
+      </ImageView>
+ 	  <ImageView fx:id="Inicio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Inicio.png" />
+         </image>
+      </ImageView>
+ 	  <ImageView fx:id="Lutador" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../assets/Lutador.png" />
+         </image>
+      </ImageView>
+ 	  <ImageView fx:id="LutadorVelocidade" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Lutador.png" />
+         </image>
+      </ImageView>
+ 	  <ImageView fx:id="SocoVelocidade" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Soco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LutadorSocando" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../assets/LutadorSoco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LutadorSocando2" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../assets/LutadorSoco2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LutadorCarregando" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../assets/LutadorCarregando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LutadorCarregando2" pickOnBounds="true" preserveRatio="true" fitHeight="250.0" fitWidth="250.0">
+         <image>
+            <Image url="@../assets/LutadorCarregando2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Soco1" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Soco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Soco2" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Soco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Soco3" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Soco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Soco4" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Soco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Soco5" pickOnBounds="true" preserveRatio="true" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@../assets/Soco.png" />
+         </image>
+      </ImageView>
+      
+      <Button text="INICIAR" onAction="#iniciar" fx:id="botaoIniciar" layoutX="580.0" layoutY="560.0" prefHeight="50" prefWidth="100" style="-fx-border-color: #ffd24a; -fx-background-color: #ffd24a; -fx-text-fill: #800000; -fx-border-width: 3;">
+      </Button>
+      <Button text="NEXT" onAction="#avancar" fx:id="botaoAvancar" layoutX="580.0" layoutY="560.0" prefHeight="50" prefWidth="100" style="-fx-border-color: #ffd24a; -fx-background-color: #ffd24a; -fx-text-fill: #800000; -fx-border-width: 3;">
+      </Button>      
+      <Slider fx:id="velocidadeSoco" blockIncrement="3.0" layoutX="66.0" layoutY="680.0" majorTickUnit="1.0" max="400.0" min="100.0" minorTickCount="0" prefHeight="36.0" prefWidth="184.0" rotate="-180.0" value="250.0" />
+      <Slider fx:id="velocidadeRecarregar" blockIncrement="3.0" layoutX="1000.0" layoutY="680.0" majorTickUnit="1.0" max="1000.0" min="100.0" minorTickCount="0" prefHeight="36.0" prefWidth="184.0" rotate="180.0" value="550.0" />
+      
+ </children>
+</AnchorPane>
